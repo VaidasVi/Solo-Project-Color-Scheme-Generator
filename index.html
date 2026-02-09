@@ -19,7 +19,57 @@
 		<link rel="stylesheet" href="index.css" />
 	</head>
 	<body>
-		<input type="color" />
+		<main>
+			<form action="submit">
+				<input type="color" />
+				<select name="color-mode">
+					<option value="monochrome">Monochrome</option>
+					<option value="monochrome-dark">Monochrome Dark</option>
+					<option value="monochrome-light">Monochrome Light</option>
+					<option value="analogic">Analogic</option>
+					<option value="complement">Complement</option>
+					<option value="analogic-complement">
+						Analogic Complement
+					</option>
+					<option value="triad">Triad</option>
+					<option value="quad">Quad</option>
+				</select>
+				<button>Get color scheme</button>
+			</form>
+			<div class="color-container">
+				<div class="color-item">
+					<div id="color" style="background: #f55a5a"></div>
+					<div id="color-number">
+						<p>#f55a5a</p>
+					</div>
+				</div>
+				<div class="color-item">
+					<div id="color" style="background: #2b283a"></div>
+					<div id="color-number">
+						<p>#2b283a</p>
+					</div>
+				</div>
+				<div class="color-item">
+					<div id="color" style="background: #fbf3ab"></div>
+					<div id="color-number">
+						<p>#fbf3ab</p>
+					</div>
+				</div>
+				<div class="color-item">
+					<div id="color" style="background: #aad1b6"></div>
+					<div id="color-number">
+						<p>#aad1b6</p>
+					</div>
+				</div>
+				<div class="color-item">
+					<div id="color" style="background: #a626d3"></div>
+					<div id="color-number">
+						<p>#a626d3</p>
+					</div>
+				</div>
+			</div>
+		</main>
+
 		<script src="index.js"></script>
 	</body>
 </html>
